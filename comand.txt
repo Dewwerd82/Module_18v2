@@ -1,0 +1,27 @@
+type >> .gitignore
+type >> README.md
+type >> webpack.config.js
+MKDIR -p source
+type >> source/index.js
+type >> source/menu.js
+npm init -y
+npm install -D webpack html-webpack-plugin
+npm start
+npm install -D webpack-cli
+npm i node-static -D
+npm run serv
+npm install -D pug pug-loader
+type >> source/index.pug
+MKDIR -p source/pages/index
+MKDIR -p source/pages/blog
+type >> source/pages/blog/blog.pug
+type >> source/pages/blog/blog.js
+type >> source/pages/base.pug 
+MKDIR -p source/components/menu
+type >> source/pages/index/index.scss
+type >> source/pages/blog/blog.scss
+type >> source/components/menu/menu.scss
+npm i css-loader sass-loader node-sass mini-css-extract-plugin --save-dev
+npm i -D optimize-css-assets-webpack-plugin cssnano
+npm install -D uglifyjs-webpack-plugin
+npm install -D eslint-loader
